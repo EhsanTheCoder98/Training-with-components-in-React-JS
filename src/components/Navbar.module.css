@@ -32,3 +32,12 @@
 .para:hover{
     color: aqua;
 }
+
+.para a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.para a:hover{
+    color: aqua;
+}

@@ -5,7 +5,7 @@ class Main extends Component {
     render() {
         return (
             <div    className={styles.container}>
-                <img src={main} className={styles.image} />
+                <img src={main} className={styles.image} alt="main" />
                 <h3 className={styles.boto}>BOTOSTART</h3>
                 <p  className={styles.para}>A place to learn more about coding in <span>JavaScript</span></p>
             </div>
