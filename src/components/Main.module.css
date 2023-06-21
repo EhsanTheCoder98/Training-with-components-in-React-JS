@@ -1,0 +1,30 @@
+.container{
+    z-index: 1;
+}
+
+.image {
+    width: 100%;
+    height:700px;
+    position: relative;
+}
+
+.boto {
+    position: absolute;
+    top:240px;
+    left:120px;
+    color: aliceblue;
+    font-size: 4rem;
+}
+
+.para {
+    position: absolute;
+    top:320px;
+    left:120px;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.para span{
+    color: aqua;
+}
+
