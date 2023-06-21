@@ -4,6 +4,8 @@ import "./App.css";
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Cards from './components/Cards';
+import Search from './components/Search';
+import Support from './components/Support';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <Navbar />
         <Main />
         <Cards />
+        <Search />
+        <Support />
       </div>
     );
   }
