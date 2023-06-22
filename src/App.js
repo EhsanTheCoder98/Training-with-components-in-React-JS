@@ -6,6 +6,7 @@ import Main from './components/Main';
 import Cards from './components/Cards';
 import Search from './components/Search';
 import Support from './components/Support';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Cards />
         <Search />
         <Support />
+        <Footer />
       </div>
     );
   }

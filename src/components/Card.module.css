@@ -11,3 +11,8 @@
     overflow: hidden;
     cursor: pointer;
 }
+
+.container:hover{
+    background-color: aqua;
+    transition: all 0.15s;
+}
