@@ -5,6 +5,26 @@ import up from "../WallPaper/up.svg"
 
 
 class Card extends Component {
+    constructor(){
+        super();
+        this.state = {
+            count: 0 ,
+        }
+    }
+    upClick = () => {
+        this.setState((preveState)=>({
+            count:preveState.count+1
+        }))
+    }
+    downClick = () => {
+       if(this.state.count>=1){
+        this.setState((preveState)=>({
+            count:preveState.count-1
+        }))
+       }
+    }
+
+
     render() {
        const {img,price,intention} = this.props;
         return (
@@ -13,9 +33,9 @@ class Card extends Component {
                 <h3>Price : {price}</h3>
                 <p>This course is for {intention}</p>
                 <div className={styles.counter}>
-                    <img src={up}   alt='up'/>
-                    <span>0</span>
-                    <img src={down} alt='down'/>
+                    <img src={up}   alt='up'    onClick={this.upClick}/>
+                    <span>{this.state.count}</span>
+                    <img src={down} alt='down' onClick={this.downClick}/>
                 </div>
             </div>
         );
