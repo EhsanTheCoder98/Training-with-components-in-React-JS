@@ -8,7 +8,7 @@ class Card extends Component {
     constructor(){
         super();
         this.state = {
-            count: 0 ,
+            count: 1 ,
         }
     }
     upClick = () => {
@@ -17,7 +17,7 @@ class Card extends Component {
         }))
     }
     downClick = () => {
-       if(this.state.count>=1){
+       if(this.state.count>=2){
         this.setState((preveState)=>({
             count:preveState.count-1
         }))
@@ -28,9 +28,9 @@ class Card extends Component {
     render() {
        const {img,price,intention} = this.props;
         return (
-            <div    className={styles.container}>
+            <div  className={styles.container}>
                 <img src={img}  alt="NodeJS logo" className={styles.image}/>
-                <h3>Price : {price}</h3>
+                <h3>Price : {price*this.state.count}$</h3>
                 <p>This course is for {intention}</p>
                 <div className={styles.counter}>
                     <img src={up}   alt='up'    onClick={this.upClick}/>
