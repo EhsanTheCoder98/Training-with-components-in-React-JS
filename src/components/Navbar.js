@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import styles from "./Navbar.module.css";
-import logo from "../WallPaper/logo.jpg";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     return (
       <div className={styles.container}>
         <div    className={styles.paraContainer}>
-          <p className={styles.para}><a href="#product">Products</a></p>
-          <p className={styles.para}>How to pay</p>
-          <p className={styles.para}>Call us</p>
+          <ul className={styles.ul}>
+          <li className={styles.para}><Link to="/">Home Page</Link></li>
+          <li className={styles.para}><Link to="/products">Products</Link></li>
+          <li className={styles.para}><Link to="/payment">How to pay</Link></li>
+          <li className={styles.para}><Link to="/callus">Call us</Link></li>
+          </ul>
         </div>
-        <img src={logo} className={styles.logo} alt="logo" />
       </div>
     );
   }

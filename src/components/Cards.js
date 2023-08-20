@@ -23,7 +23,7 @@ class Cards extends Component {
 
     render() {
         return (
-            <div    className={styles.container}    id='product'>
+            <div    className={styles.container} >
                 {/* <Card img={NodeJS}  price={200}  intention="BackEnd Developement" />
                 <Card img={Express} price={300}  intention="BackEnd Developement" />
                 <Card img={Next}    price={400}  intention="FrontEnd Developement"/>
