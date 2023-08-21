@@ -31,7 +31,7 @@ class Card extends Component {
             <div  className={styles.container}>
                 <img src={img}  alt="product logo" className={styles.image}/>
                 <h3>Price : {price*this.state.count}$</h3>
-                <p>This product is for sale : {intention}</p>
+                <p>{intention}</p>
                 <div className={styles.counter}>
                     <img src={up}   alt='up'    onClick={this.upClick}/>
                     <span>{this.state.count}</span>
