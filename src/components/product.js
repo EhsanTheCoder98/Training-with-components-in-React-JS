@@ -22,7 +22,7 @@ class product extends Component {
     render() {
         return (
             <div className={Styles.container}>
-                {this.state.forSale.length ? this.state.forSale.map(products =><Card key={products.id} img={products.image} price={products.price}  intention={products.title}/> ) : <img id={Styles.image} src={loading} alt="Loading"/> }
+                {this.state.forSale.length ? this.state.forSale.map(products =><Card key={products.id} img={products.image} price={products.price}  intention={products.title} id={products.id}/> ) : <img id={Styles.image} src={loading} alt="Loading"/> }
                 {}
             </div>
         );

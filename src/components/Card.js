@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from "./Card.module.css"
 import down from "../WallPaper/down.svg"
 import up from "../WallPaper/up.svg"
+import { Link } from 'react-router-dom';
 
 
 class Card extends Component {
@@ -26,12 +27,12 @@ class Card extends Component {
 
 
     render() {
-       const {img,price,intention} = this.props;
+       const {img,price,intention,id} = this.props;
         return (
             <div  className={styles.container}>
-                <img src={img}  alt="product logo" className={styles.image}/>
+                <Link    to={`/products/${id}`}><img src={img}  alt="product logo" className={styles.image}/></Link>
                 <h3>Price : {price*this.state.count}$</h3>
-                <p>{intention}</p>
+                <p><Link    to={`/products/${id}`}>{intention}</Link></p>
                 <div className={styles.counter}>
                     <img src={up}   alt='up'    onClick={this.upClick}/>
                     <span>{this.state.count}</span>

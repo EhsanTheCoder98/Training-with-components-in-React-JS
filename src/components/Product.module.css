@@ -3,6 +3,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     min-height: 100vh;
+    background:url(../WallPaper/logo.jpg);
+    background-size: cover;
 }
 #image {
     width: 100%;

@@ -15,6 +15,10 @@
     cursor: pointer;
     position: relative;
 }
+.container a {
+    text-decoration: none;
+    color: black;
+}
 
 .container:hover{
     background-color: rgb(0, 255, 255);
