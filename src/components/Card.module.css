@@ -1,34 +1,36 @@
 .image {
     width:100%;
-    height:200px
+    height:170px;
 }
 .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 20%;
-    height: 310px;
+    min-height: 310px;
     background-color: rgba(128, 128, 128, 0.611);
     border-radius: 20px;
-    margin: 10px auto;
+    margin: 20px 20px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
 }
 
 .container:hover{
     background-color: rgb(0, 255, 255);
     transition: all 0.15s;
     transform: scaleY(1.03);
-    .counter{
-    border-top: 2px solid rgb(0, 0, 0);
-    transition: all .5s linear;
-    }
 }
 
 .counter {
     display: flex;
     text-align: center;
     justify-content: center;
-    border-top: 2px solid rgb(205, 202, 202);
     margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right:50%;
 }
 
 .counter span {
@@ -40,9 +42,14 @@
     color:black;
 }
 
+.container p {
+border-bottom: 2px solid black;
+font-size: .9rem;
+}
+
 .counter img {
     width:20px;
-    height: 20px;
+    height: fit-content;
     padding:8px 5px;
     opacity:.7;
 }

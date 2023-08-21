@@ -29,9 +29,9 @@ class Card extends Component {
        const {img,price,intention} = this.props;
         return (
             <div  className={styles.container}>
-                <img src={img}  alt="NodeJS logo" className={styles.image}/>
+                <img src={img}  alt="product logo" className={styles.image}/>
                 <h3>Price : {price*this.state.count}$</h3>
-                <p>This course is for {intention}</p>
+                <p>This product is for sale : {intention}</p>
                 <div className={styles.counter}>
                     <img src={up}   alt='up'    onClick={this.upClick}/>
                     <span>{this.state.count}</span>
